@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Quick Scroll",
-    "version": "1.0",
+    "author": "Jayesh Bhoot",
+    "version": "0.1",
     "description": "Quickly scroll to top or bottom of a page.",
     "homepage_url": "https://github.com/jayesh-bhoot/quick-scroll",
     "background": {
