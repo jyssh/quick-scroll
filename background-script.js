@@ -2,8 +2,9 @@
 // in manifest.json, using key
 // `"show_matches": ["<all_urls>"]`.
 //
-// However, as explained vaguely here:
-// https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Differences_between_desktop_and_Android#Effect_on_your_add-on_UI
+// However, quoting from 
+// https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Differences_between_desktop_and_Android#Effect_on_your_add-on_UI:
+//
 // >> The features of pageAction are also reduced in Firefox for Android.
 // >> The manifest.json key page_action enables you to define the button icon and a popup.
 // >> You then have use of pageAction.show() and pageAction.hide() however, once ‘shown’,
