@@ -20,22 +20,10 @@
         "default_icon": "icons/scroll.svg",
         "pinned": true
     },
-    "applications": {
-      "gecko": {
-        "id": "quick-scroll@bhoot.sh",
-        "strict_min_version": "45.0"
-      }
-    },
     "browser_specific_settings": {
       "gecko": {
         "id": "quick-scroll@bhoot.sh",
-        "strict_min_version": "45.0"
+        "strict_min_version": "57.0"
       }
-    },
-    "permissions": [
-        "<all_urls>",
-		"storage",
-		"tabs",
-        "activeTab"
-    ]
+    }
 }

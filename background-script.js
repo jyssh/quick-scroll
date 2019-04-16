@@ -1,7 +1,3 @@
-const informTab = (tab) => {
-    browser.tabs.sendMessage(tab.id, {scroll: true})
-}
-
 // The ideal way to display pageAction icon should be
 // in manifest.json, using key
 // `"show_matches": ["<all_urls>"]`.
@@ -20,14 +16,12 @@ const informTab = (tab) => {
 // has no effect in Firefox Android - my main target platform for this add-on.
 // Hence, the need to resort to `pageAction.show()` whenever a tab is activated.
 browser.tabs.onActivated.addListener(tabInfo => {
+    // pageAction.isShown() API is not available in Firefox for Android.
+    // So I have to force pageAction.show() everytime a tab is activated.
     browser.pageAction.show(tabInfo.tabId)
-    /*browser.pageAction
-        .isShown({tabId: tabInfo.tabId})
-        .then(shown => {
-            if (!shown) {
-                browser.pageAction.show(tabInfo.tabId)
-            }
-        })*/
 })
 
-browser.pageAction.onClicked.addListener(informTab)
+
+browser.pageAction.onClicked.addListener(tab => {
+    browser.tabs.sendMessage(tab.id, {scroll: true})
+})
