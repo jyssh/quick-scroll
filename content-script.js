@@ -12,3 +12,4 @@ browser.runtime.onMessage.addListener(request => {
         scrolled: true
     })
 })
+

@@ -17,9 +17,7 @@
         "96": "icons/scroll.svg"
     },
     "page_action": {
-        "browser_style": false,
         "default_icon": "icons/scroll.svg",
-        "show_matches": ["<all_urls>"],
         "pinned": true
     },
     "applications": {
@@ -34,5 +32,10 @@
         "strict_min_version": "45.0"
       }
     },
-    "permissions": ["activeTab"]
+    "permissions": [
+        "<all_urls>",
+		"storage",
+		"tabs",
+        "activeTab"
+    ]
 }
