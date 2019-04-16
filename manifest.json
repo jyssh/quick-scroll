@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Swift Scroll",
+    "name": "Quick Scroll",
     "version": "1.0",
-    "description": "Swiftly scroll to top or bottom of a page.",
-    "homepage_url": "https://github.com/jayesh-bhoot/swift-scroll",
+    "description": "Quickly scroll to top or bottom of a page.",
+    "homepage_url": "https://github.com/jayesh-bhoot/quick-scroll",
     "background": {
         "scripts": ["background-script.js"]
     },
@@ -23,13 +23,13 @@
     },
     "applications": {
       "gecko": {
-        "id": "swift-scroll@bhoot.sh",
+        "id": "quick-scroll@bhoot.sh",
         "strict_min_version": "45.0"
       }
     },
     "browser_specific_settings": {
       "gecko": {
-        "id": "swift_scroll@bhoot.sh",
+        "id": "quick-scroll@bhoot.sh",
         "strict_min_version": "45.0"
       }
     },
