@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Swift Scroll",
+    "version": "1.0",
+    "description": "Swiftly scroll to top or bottom of a page.",
+    "homepage_url": "https://github.com/jayesh-bhoot/swift-scroll",
+    "background": {
+        "scripts": ["background-script.js"]
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content-script.js"]
+    }],
+    "icons": {
+        "48": "icons/scroll.svg",
+        "96": "icons/scroll.svg"
+    },
+    "page_action": {
+        "browser_style": false,
+        "default_icon": "icons/scroll.svg",
+        "show_matches": ["<all_urls>"],
+        "pinned": true
+    },
+    "applications": {
+      "gecko": {
+        "id": "swift-scroll@bhoot.sh",
+        "strict_min_version": "45.0"
+      }
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "swift_scroll@bhoot.sh",
+        "strict_min_version": "45.0"
+      }
+    },
+    "permissions": ["activeTab"]
+}
