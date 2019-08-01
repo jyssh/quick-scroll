@@ -4,6 +4,7 @@
 
 - The pageAction icon moves to a dropdown in text form. I thought that `pageAction.setTitle()` API may be able to change that text ('Scroll Up', 'Scroll Down'). But again it is [not supported in Firefox for Android](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setTitle#Browser_compatibility).
 
+Test
 
 # Credits
 
